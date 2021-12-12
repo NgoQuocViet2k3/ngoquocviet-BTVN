@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--4c:Nhập vào a và b, tính tổng các số từ a đến b-->
+Nhập số a = <input type="number" id="a"><br>
+Nhập số b = <input type="number" id="b"><br>
+<button onclick="result()">Kết quả</button>
+<p id="result1"></p>
+<p id="result2"></p>
+<script>
+    function result() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        a = parseFloat(a);
+        b = parseFloat(b);
+        let result = a < b ?
+            (a + b) * (b - a + 1) / 2 :
+            (a + b) * (a - b + 1) / 2 ;
+        document.getElementById("result1").innerHTML = 'Tổng các số từ ' + a + ' đến ' + b + ' là';
+        document.getElementById("result2").innerHTML = result;
+    }
+    </script>
+</body>
+</html>

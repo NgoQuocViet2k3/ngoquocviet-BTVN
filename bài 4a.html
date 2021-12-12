@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--4a:Nhập vào a, hiển thị ra chu vi và diện tích và hình vuông độ dài
+cạnh a-->
+Cạnh hình vuông a = <input type="number" id="a"><br>
+<button onclick="result()">Kết quả</button>
+<p id="result"></p>
+
+<script>
+    function result(){
+        let a = document.getElementById("a").value;
+        let s = a * a;
+        let p = 4 * a;
+        document.getElementById("result").innerHTML =
+            'Diện tích hình vuông là: ' + s +
+            '. Chu vi hình vuông là:' + p;
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+a:<input type="number" id="a"/>
+b:<input type="number" id="b"/>
+<button onclick="area()">Hiển thị S</button>
+<h1 id="result"></h1>
+<script>
+    function area(){
+        let a=document.getElementById('a').value;
+        let b=document.getElementById('b').value;
+        let s=a*b;
+        document.getElementById('result').innerHTML='s='+s;
+    }
+</script>
+</body>
+</html>

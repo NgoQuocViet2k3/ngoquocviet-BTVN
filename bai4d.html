@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--4d:Nhập vào a là năm, in ra thế kỉ.-->
+Nhập năm = <input type="number" id="x"><br>
+<button onclick="result()">Kết quả</button>
+<p id="result"></p>
+<script>
+    function result() {
+        let year = document.getElementById('x').value;
+        let Century = year/100;
+        if (year % 100 == 0) {
+            document.getElementById('result').innerHTML = 'Thế kỉ: '+ Century;
+        }
+        else {
+            document.getElementById('result').innerHTML = 'Thế kỉ: '+ parseInt(Century + 1);
+        }
+    }
+</script>
+</body>
+</html>
